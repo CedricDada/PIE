@@ -1,0 +1,315 @@
+\section*{Résumé}
+Le projet \textbf{TactIAque} a pour objectif de développer une solution complète d’analyse tactique pour les sports collectifs, en utilisant des outils d’intelligence artificielle. Le processus inclut la détection des joueurs, le suivi de leurs mouvements et l’analyse tactique des données collectées. Ce projet est initialement conçu pour le basketball, mais il est adaptable à d’autres sports selon les besoins.
+\thispagestyle{empty} 
+\addtocounter{page}{-1} 
+% Si vous ne voulez pas de page vide après le sommaire
+\thispagestyle{empty} 
+\addtocounter{page}{-1}
+\newpage
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+.......
+
+\newpage
+\section{Finalités et Importance du Projet}
+L’analyse tactique dans les sports collectifs connaît une croissance exponentielle grâce aux avancées en vision par ordinateur et en apprentissage automatique (\textit{Machine Learning}). Ces technologies permettent aujourd’hui de comprendre et d’optimiser les stratégies de jeu avec une précision et une profondeur sans précédent.
+
+Le projet \textbf{TactIAque} s’inspire des récents travaux de \textbf{RoboFlow}, une initiative pionnière visant à améliorer les algorithmes d’analyse tactique pour le football. Toutefois, le basketball reste un domaine encore sous-exploré dans ce contexte, offrant une opportunité unique de développement et d’innovation. Ce projet se concentre donc sur le basketball, avec pour objectif de fournir des outils robustes pour l’analyse des tactiques dans ce sport collectif.
+
+En combinant des méthodologies existantes et des innovations spécifiques au basketball, \textbf{TactIAque} vise à combler cette lacune en proposant des solutions adaptées aux exigences de ce sport.
+
+\section{Objectifs et contraintes}
+Après avoir présenté le contexte et l'importance du projet, nous détaillons ici les objectifs spécifiques qui guideront sa mise en œuvre.
+\subsection{Objectifs du projet}
+Les objectifs principaux du projet sont :
+\begin{itemize}
+    \item Développer un algorithme capable de détecter les joueurs, leurs équipes respectives et le ballon à partir de vidéos sportives.
+    \item Mettre en place un système pour suivre les trajectoires des joueurs et les visualiser graphiquement.
+    \item Réaliser une analyse tactique avancée en exploitant la théorie des graphes et des algorithmes de classification pour identifier des schémas de jeu.
+\end{itemize}
+
+\subsection{Hypothèses et ressources disponibles}
+Pour garantir le succès du projet, plusieurs hypothèses de départ ont été formulées :
+\begin{itemize}
+    \item \textbf{Disponibilité des données :} Une base de données de vidéos de matchs de basketball sera constituée pour entraîner et tester les modèles développés.
+    \item \textbf{Utilisation des outils de pointe :} Les technologies incluront des frameworks d’apprentissage automatique avancés tels que HuggingFace et des modèles de fondation comme \textit{Florence 2}.
+    \item \textbf{Accès aux ressources matérielles :} L’équipe disposera des équipements nécessaires (matériel informatique performant, outils de traitement vidéo, etc.) pour mener à bien le projet.
+\end{itemize}
+\newpage
+
+\subsection{Clients et Partenaires}
+\textbf{Clients potentiels :}
+\begin{itemize}
+    \item \textbf{Clubs sportifs professionnels :} Amélioration de la stratégie d’équipe par une analyse détaillée des tactiques et des performances.
+    \item \textbf{Entraîneurs et analystes :} Mise à disposition d’outils pour étudier les comportements individuels et collectifs des joueurs.
+    \item \textbf{Fédérations sportives :} Soutien à la formation et à l’évaluation des joueurs à l’aide de visualisations tactiques innovantes.
+    \item \textbf{Universités et centres de recherche :} Développement de collaborations pour améliorer les outils d’analyse des sports collectifs.
+\end{itemize}
+
+\textbf{Partenaires stratégiques :}
+\begin{itemize}
+    \item \textbf{Développeurs technologiques :} Intégration avec des frameworks et des outils d’apprentissage automatique tels que HuggingFace.
+    \item \textbf{Fournisseurs de données sportives :} Accès à des vidéos de matchs pour entraîner les modèles.
+\end{itemize}
+
+\subsection{Principales Fonctions Identifiées par le Cahier des Charges}
+Le but de ce projet est de fournir une solution complète pour l’analyse tactique dans le basketball, comprenant les fonctionnalités suivantes :
+\begin{itemize}
+    \item \textbf{Détection :} Identification des joueurs, des équipes et du ballon à partir de vidéos.
+    \item \textbf{Suivi :} Traçage des trajectoires des joueurs sur le terrain.
+    \item \textbf{Visualisation :} Création de graphiques montrant les mouvements des joueurs et les dynamiques collectives.
+    \item \textbf{Analyse tactique :} Identification des schémas de jeu et des interactions clés à l’aide de la théorie des graphes et des modèles de classification.
+\end{itemize}
+
+Une fois les objectifs sont identifiés, il est essentiel d'établir un plan structuré pour garantir la réalisation efficace du projet.
+
+
+\section{Planification du Projet}
+\subsection{Charte de Projet}
+\begin{itemize}
+    \item \textbf{Objectifs} : Détecter les joueurs, arbitres, et porteurs de balle avec une précision minimale de 95\%.
+    \item \textbf{Livrables} : Modèle de détection, base de données annotée, rapport de performance.
+    \item \textbf{Échéancier} :
+    \begin{itemize}
+        \item Phase 1 : Constitution de la base de données (1 mois).
+        \item Phase 2 : Fine-tuning du modèle RT-DETR (2 mois).
+        \item Phase 3 : Validation et ajustement (1 mois).
+    \end{itemize}
+\end{itemize}
+
+\subsection{WBS (Work Breakdown Structure)}
+Les tâches principales sont divisées comme suit :
+\begin{itemize}
+    \item \textbf{Collecte et annotation des vidéos.}
+    \item \textbf{Prétraitement des données :} Nettoyage, augmentation des données.
+    \item \textbf{Entraînement initial :} Entraînement du modèle RT-DETR.
+    \item \textbf{Validation :} Calcul des métriques sur un échantillon de test.
+    \item \textbf{Ajustements :} Utilisation de la méthode active learning.
+\end{itemize}
+La planification fournit une vue d'ensemble des étapes du projet. Passons maintenant à la gestion des tâches, où chaque activité est spécifiquement assignée et organisée.
+
+\section{Gestion des tâches}
+\subsection{Objectifs SMART}  
+Dans le cadre de la gestion de la partie détection des joueurs, les objectifs définis respectent les principes SMART (Spécifique, Mesurable, Accepté, Réaliste, Temporellement défini) :  
+\begin{itemize}  
+    \item \textbf{Exemple concret} : Annoter 500 images par semaine afin de constituer une base de données suffisamment robuste.  
+    \item \textbf{Spécifique} : Réduire l’erreur de détection à un seuil inférieur à 10\%, en ciblant les zones critiques identifiées lors des premières itérations.  
+    \item \textbf{Temporellement défini} : Finaliser l’ensemble des annotations nécessaires dans un délai de 4 semaines.  
+\end{itemize}
+
+
+\subsection{To do List}
+Chaque tâche est définie par :
+\begin{itemize}
+    \item \textbf{Qui ?} Annotateurs.
+    \item \textbf{Quoi ?} Annotation, entraînement, validation.
+    \item \textbf{Quand ?} Délais précis pour chaque tâche.
+\end{itemize}
+
+Une gestion efficace des tâches nécessite un suivi rigoureux pour s'assurer que les objectifs sont atteints dans les délais impartis.
+\section{Suivi du Projet et Gestion de l'Effet Tunnel}
+
+\subsection{Jalons Intermédiaires}
+Le suivi du projet est organisé autour de jalons clés qui permettent de mesurer l’avancement à intervalles réguliers, tout en évitant l’effet tunnel. Les jalons définis sont les suivants :
+\begin{itemize}
+    \item \textbf{1er Jalon :} Annotation et validation de 50\% des images nécessaires à l’entraînement. Ce jalon inclut une revue qualité des annotations et un ajustement des protocoles si nécessaire.
+    \item \textbf{2e Jalon :} Entraînement initial du modèle avec un objectif de précision intermédiaire d’au moins 80\%. Cela inclut la génération de premiers résultats et une analyse approfondie des erreurs.
+    \item \textbf{3e Jalon :} Validation finale du modèle atteignant une précision cible de 95\%. Ce jalon inclut également des tests sur des données externes pour évaluer la généralisation et des livrables intermédiaires pour l’équipe pédagogique.
+    \item \textbf{Livrables intermédiaires :} Documents synthétiques de suivi, résultats partiels des métriques de performance, et prototypes de visualisation.
+\end{itemize}
+
+\subsection{Cycle PDCA}
+Pour garantir un avancement itératif et structuré, le projet adopte le cycle PDCA (\textit{Plan-Do-Check-Act}), un outil clé pour l’amélioration continue.
+\begin{table}  
+    \centering  
+    \begin{tabular}{|p{7cm}|p{7cm}|}  
+    \hline 
+    \centering
+    %\multicolumn{1}{c}{\textbf{Plan}} & \multicolumn{1}{c|}{\textbf{Do}} \\  
+    %\hline  
+    \begin{itemize}
+    \item Identifier les objectifs précis de chaque phase du projet, comme le nombre d’images à annoter ou les métriques cibles. 
+    \item Préparer les outils nécessaires, incluant des logiciels pour l’annotation (RoboFlow) et des scripts pour le prétraitement des données. 
+    \item Établir des plannings hebdomadaires détaillés pour chaque membre de l’équipe. 
+    \end{itemize}&
+    \begin{itemize}
+        \item Effectuer l’annotation des données selon les protocoles définis pour garantir la cohérence et la qualité. 
+        \item Entraîner le modèle sur des sous ensembles de données annotées, en suivant des configurations préétablies. 
+        \item Documenter les processus et collecter les résultats pour les étapes suivantes.   
+    \end{itemize}\\
+    \hline  
+    \centering
+    %\multicolumn{1}{c}{\textbf{Check}} & \multicolumn{1}{c|}{\textbf{Act}}\\  
+    %\hline  
+    \begin{itemize}
+    \item Vérifier les performances du modèle sur des ensembles de test définis, en utilisant des métriques telles que la précision, le rappel et le F1-score. 
+    \item Analyser les écarts entre les résultats attendus et obtenus, et identifier les points faibles, comme les erreurs systématiques dans les annotations ou les biais dans les données.   
+    \end{itemize}&
+    \begin{itemize}
+        \item Ajuster les hyperparamètres du modèle ou les configurations d’entraînement pour améliorer les performances. 
+        \item Affiner les annotations ou enrichir la base de données avec des techniques de \emph{data augmentation}.
+        \item Intégrer les retours des parties prenantes et adapter le planning en conséquence. 
+    \end{itemize}\\
+    \hline  
+    \end{tabular}  
+    \caption{Matrice SWOT pour la détection des joueurs}  
+\end{table}  
+
+\subsection{Outils et Méthodes de Suivi}
+Pour assurer une gestion rigoureuse, les outils et méthodes suivants sont utilisés :
+\begin{itemize}
+    \item \textbf{Outils de gestion :} Teams pour le suivi des tâches, Excel pour les métriques de progression.
+    \item \textbf{Rapports hebdomadaires :} Synthèses d’avancement partagées avec l’équipe pédagogique pour valider les étapes et anticiper les risques.
+    \item \textbf{Réunions régulières :} Points hebdomadaires pour ajuster les priorités et résoudre les blocages.
+\end{itemize}
+
+Le suivi du projet met en évidence la nécessité d'une répartition claire des responsabilités, afin de maximiser l'efficacité et la collaboration.
+
+\section{Répartition des Responsabilités}
+
+\subsection{Matrice RACI}
+La matrice RACI ci-dessous identifie les responsabilités spécifiques des membres de l'équipe, tous étudiants à l'ENSTA, pour garantir une répartition claire des tâches dans le projet TactIAque.
+
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+    \hline
+    \textbf{Tâche} & \textbf{Responsable (R)} & \textbf{Autorité (A)} & \textbf{Consulté (C)} & \textbf{Informé (I)} \\
+    \hline
+    Annotation des images & Hana FEKI & Nom Prenom & Nom Prenom & Toute l'équipe \\
+    \hline
+    Prétraitement des données & Nom Prenom & Nom Prenom & Nom Prenom & Toute l'équipe \\
+    \hline
+    Entraînement du modèle & Nom Prenom & Équipe pédagogique & Nom Prenom & Toute l'équipe \\
+    \hline
+    Validation des résultats & Nom Prenom & Équipe pédagogique & Nom Prenom & Toute l'équipe \\
+    \hline
+    Analyse tactique & Nom Prenom & Nom Prenom & Nom Prenom & Nom Prenom  \\
+    \hline
+\end{tabular}
+\caption{Matrice RACI des étudiants pour le projet TactIAque}
+\label{tab:RACI}
+\end{table}
+
+\subsection{Descriptions des rôles}
+\begin{itemize}
+    \item \textbf{Nom Prenom (Chef de Projet)} : Supervise l'ensemble des activités, s'assure du respect des délais, et coordonne les livrables finaux.
+    \item \textbf{Nom Prenom (Développeur IA)} : Responsable de l'entraînement des modèles, du choix des architectures et de l'optimisation des performances.
+    \item \textbf{Nom Prenom (Spécialiste des Données)} : En charge de la collecte, de l'annotation et du prétraitement des données pour garantir leur qualité.
+    \item \textbf{Équipe pédagogique (Autorité)} : Fournit des conseils techniques et pédagogiques, valide les jalons et guide les décisions stratégiques.
+\end{itemize}
+Une répartition efficace des responsabilités doit être complétée par des mécanismes de collaboration, tels que des réunions régulières et des échanges fluides entre les membres de l'équipe.
+\section{Efficacité des Réunions et Collaboration}
+\subsection{Types de Réunions}  
+Afin d'assurer une coordination optimale et un suivi rigoureux du projet, différentes catégories de réunions sont organisées :  
+\begin{itemize}  
+    \item \textbf{Réunion d’avancement} : Organisée chaque semaine en équipe à l’école ENSTA, cette réunion permet de faire le point sur l’état d’avancement des tâches en cours, d’évaluer les performances par rapport aux objectifs fixés et de planifier les prochaines étapes.  
+    \item \textbf{Réunion technique} : Dédiée à la résolution de problèmes spécifiques, elle mobilise les membres ayant une expertise particulière pour traiter les difficultés rencontrées, telles que la gestion des images floues ou la performance du modèle.   
+\end{itemize}  
+
+\subsection{Compte-rendu}  
+Chaque réunion est suivie d’un compte-rendu formalisé, structuré selon les points suivants :  
+\begin{itemize}  
+    \item \textbf{Tâches réalisées} : Liste des activités complétées depuis la dernière réunion, accompagnée d’une évaluation de leur conformité avec les objectifs fixés.  
+    \item \textbf{Difficultés rencontrées} : Analyse des obstacles identifiés, avec une description détaillée de leur impact sur le projet et des pistes de résolution envisagées.  
+    \item \textbf{Actions à entreprendre} : Définition des tâches prioritaires à accomplir avant la prochaine réunion, avec les responsables et les échéances associées.  
+\end{itemize}  
+Malgré une organisation solide, tout projet comporte des risques. Nous abordons ici les menaces potentielles et les opportunités liées au projet.
+
+\section{Analyse des Risques et Opportunités}
+L’analyse SWOT suivante met en évidence les éléments clés influençant la réussite du projet :  
+
+\begin{table} 
+    \centering  
+    \begin{tabular}{|p{7cm}|p{7cm}|}  
+    \hline  
+    \textbf{Forces (Strengths)} & \textbf{Faiblesses (Weaknesses)} \\  
+    \hline  
+    \begin{itemize}
+    \item Disponibilité de modèles performants comme RT-DETR, reconnus pour leur efficacité en détection multi-objets. 
+     \item Outils avancés tels que HuggingFace, facilitant le fine-tuning et l’itération rapide. 
+     \item Accès à une infrastructure puissante pour l’entraînement (GPU haute performance). 
+    \end{itemize}
+    & 
+    \begin{itemize}
+     \item Dépendance critique à une annotation de haute qualité, nécessitant des ressources humaines et financières importantes. 
+     \item Complexité des scènes sportives, avec des objets en mouvement rapide et des interactions multiples. 
+     \item Risque de sur-ajustement du modèle en raison de la limitation des données annotées. 
+    \end{itemize}\\
+     \hline  
+    \textbf{Opportunités (Opportunities)} & \textbf{Menaces (Threats)} \\  
+    \hline  
+    \begin{itemize}
+        \item Possibilité de générer des résultats innovants et publiables dans des conférences ou journaux scientifiques.   
+        \item Intérêt croissant pour l’analyse des sports à l’aide de l’IA, ouvrant des opportunités de collaboration ou de financement.  
+        \item Potentiel d’application du modèle à d’autres sports, élargissant les cas d’usage.
+    \end{itemize}&
+    \begin{itemize}
+        \item Risque de données insuffisantes ou de faible diversité, compromettant la généralisation du modèle. 
+        \item Problèmes potentiels de droits et d’accès aux vidéos de matches pour constituer la base de données. 
+        \item Délais stricts pour livrer les résultats dans le cadre du projet TactIAque. 
+    \end{itemize}\\
+    \hline  
+    \end{tabular}  
+    \caption{Matrice SWOT pour la détection des joueurs}  
+\end{table}  
+
+\section{Budget et Ressources}
+Pour atténuer les risques identifiés, une allocation appropriée des ressources financières est indispensable. Nous présentons ici le budget nécessaire pour atteindre nos objectifs.
+\begin{itemize}
+    \item \textbf{Investissements initiaux :} Achat de GPU. L'ENSTA a déjà financé ces investissements. 
+    \item \textbf{Coûts variables :} Annotation par image, entraînement du modèle. Nous serions les annotateurs du projet.
+    \item \textbf{Coûts futurs :} Maintenance et amélioration continue.
+\end{itemize}
+Avec un budget défini, nous passons à la description détaillée du déroulement du projet, depuis les phases initiales jusqu'à l'achèvement.
+\section{Déroulement du Projet}
+\subsection{Phases du Projet}
+\begin{enumerate}
+    \item \textbf{Collecte et Préparation des Données :} Constitution d’une base de données à partir de vidéos existantes.
+    \item \textbf{Détection des Joueurs :} Fine-tuning d’un modèle existant comme RT-DETR pour identifier les joueurs, équipes et arbitres.
+    \item \textbf{Suivi des Joueurs :} Utilisation de techniques telles que UMAP et k-plus proches voisins pour suivre les trajectoires.
+    \item \textbf{Analyse Tactique :} Études des schémas tactiques à l’aide de la théorie des graphes et d’algorithmes de classification.
+\end{enumerate}
+
+\subsection{Organisation}
+\textbf{Rôles :}
+\begin{itemize}
+    \item \textbf{Chef de projet :} Coordination et suivi global.
+    \item \textbf{Responsable technique :} Développement et implémentation des algorithmes.
+    \item \textbf{Responsable des données :} Collecte, préparation et gestion des données.
+\end{itemize}
+
+\section{Livrables}
+Chaque phase du projet vise à produire des livrables spécifiques, répondant aux objectifs fixés.
+\begin{itemize}
+    \item Algorithme fonctionnel pour la détection et le suivi des joueurs.
+    \item Visualisation graphique des trajectoires des joueurs.
+    \item Rapport technique détaillant les méthodologies utilisées.
+\end{itemize}
+Ces livrables doivent être accompagnés d'une gestion proactive des risques, afin de garantir leur qualité et leur pertinence.
+\section{Gestion des Risques}
+
+\subsection{Principaux Risques Identifiés}
+\begin{itemize}
+    \item \textbf{Qualité insuffisante des vidéos pour l’entraînement des modèles :} Les vidéos disponibles peuvent manquer de résolution ou présenter des angles de vue non optimaux, ce qui peut réduire la précision des modèles.
+    \item \textbf{Difficulté à généraliser les résultats à d’autres sports :} Les caractéristiques tactiques et les dynamiques diffèrent entre les sports, ce qui peut limiter la réutilisation directe des modèles.
+    \item \textbf{Contraintes temporelles liées à la complexité des tâches :} Le calendrier du projet, limité à un semestre, impose des échéances strictes qui pourraient être difficiles à respecter.
+    \item \textbf{Manque de données annotées :} La création d’une base de données annotée est une tâche chronophage et critique pour l’entraînement des modèles.
+    \item \textbf{Risques liés à la gestion des ressources matérielles :} Une indisponibilité ou une insuffisance des ressources informatiques (GPU, serveurs) pourrait retarder le projet.
+\end{itemize}
+
+\subsection{Plan de Mitigation}
+\begin{itemize}
+    \item \textbf{Amélioration des données :} Utiliser des techniques de \textit{data augmentation} telles que la rotation, le recadrage, ou l’ajout de bruit pour enrichir les données disponibles et compenser les limitations des vidéos.
+    \item \textbf{Tests préliminaires sur d’autres sports :} Dès les premières étapes, valider les performances du modèle sur des sports ayant des dynamiques similaires au basket-ball pour anticiper les ajustements nécessaires.
+    \item \textbf{Planification rigoureuse :} Décomposer les tâches complexes en sous-tâches gérables et attribuer des priorités claires pour respecter les échéances du semestre.
+    \item \textbf{Collaboration et partage des annotations :} Répartir le travail d’annotation entre les membres de l’équipe pour accélérer le processus tout en assurant la qualité par un contrôle croisé.
+    \item \textbf{Optimisation des ressources matérielles :} Planifier l’utilisation des ressources de calcul en heures creuses et explorer des options de cloud computing pour répondre aux besoins supplémentaires.
+    \item \textbf{Gestion proactive des risques :} Mettre en place un suivi hebdomadaire des risques identifiés pour ajuster les plans en fonction de l’évolution des obstacles.
+\end{itemize}
+
+\newpage
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
