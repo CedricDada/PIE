@@ -9,3 +9,4 @@ OUTPUT pie_rapport.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map

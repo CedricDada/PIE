@@ -55,8 +55,8 @@ En combinant des méthodologies existantes et des innovations spécifiques au ba
 \clearpage
 \subsection{Contexte/Hypothèses de départ}
 \subsubsection{Clients}
-\subsection{Partenaires}
-\subsection{Principales fonctions identifiées par le cahier des charges}
+\subsubsection{Partenaires}
+\subsubsection{Principales fonctions identifiées par le cahier des charges}
 \subsection{Objectifs et résultats opérationnels}
 \begin{figure}[!h]
 	\begin{center}
@@ -70,7 +70,8 @@ En combinant des méthodologies existantes et des innovations spécifiques au ba
 \paragraph{Services}
 \paragraph{Documentation}
 \subsubsection{Critères et indicateurs de succès}
-
+\paragraph{Précision de la détection des joueurs}
+\paragraph{}
 
 \section{Déroulement du projet}
 \subsection{Organisation/ ressources, budget}
@@ -107,10 +108,42 @@ Comment les dépenses seront réparties sur la durée du projet
     \end{tabular}
 \end{table}
 \subsection{Risques et opportunités}
-
+\paragraph{Identification des risques}
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[scale=0.25]{images/arbre_causes.png}
+		\caption{Arbre de causes}
+		\label{fig:arbre_causes}
+	\end{center}
+\end{figure}
+\paragraph{Un plan de prévention efficace}
+Nous avons un exemple de plan de prévention à la figure \ref{fig:plan_prevention}.
+\begin{danger}
+	Il ne faut pas oublier de tier le tableau pour mettre en haut les risques prioritaires
+\end{danger}
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[scale=0.25]{images/plan_prevention.png}
+		\caption{Plan de prévention}
+		\label{fig:plan_prevention}
+	\end{center}
+\end{figure}
+\clearpage
 \section{Cahier des charges techniques : exigences opérationnelles}
 \subsection{Exigences}
-
+\paragraph{Exigences fonctionnelles}
+\begin{itemize}
+    \item Identifier les joueurs 
+    \item Associer les joueurs à leurs équipes 
+    \item Identifier le joueur en possession de la balle 
+    \item Identifier le ou les arbitres 
+    \item Identification des joueurs pivots 
+    \item Prédire une situation de jeu (tir, interception, \dots)
+\end{itemize}
+\paragraph{Exigences non fonctionnelles}
+\begin{itemize}
+    \item 
+\end{itemize}
 \subsection{Lots et responsabilités}
 Le \textbf{WBS} est une opération très délicate de séquençage du projet, qui permet de :
 \begin{itemize}
@@ -121,23 +154,46 @@ Le \textbf{WBS} est une opération très délicate de séquençage du projet, qu
 Une fois que le client a défini son projet et que celui ci a été formalisé dans le cahier de charge et la charte de projets, le maitre d'oeuvre doit pouvoir le réaliser. Le défi est de passer d'une logique fonctionnelle au résultat tels qu'ils ont été formalisés dans le cahier de charges et la charte de projet, \textbf{à une logique de travaux}.
 
 On doit convertir le "quoi faire?" en "comment faire?" en déterminant les lots de travail nécessaires pour réaliser chaque fonction.
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/lots.png}
-	\end{center}
-\end{figure}
+
 Cela permet d'obtenir l'organigrame des taches, ce qu'on appelle couramment le \textbf{WBS}(work breakdown structure).\\
 
 \paragraph*{Les lots de travail / Work packages}
 Pour chaque tache de travail, on décompose selon un critère donné. Par exemple le métier qui réalise le travail, la localisation du chantier, l'ordre de succession.
 Un exemple de WBS à la figure \ref{fig:exemple_wbs}
-\begin{figure}[!h]
+\begin{sidewaysfigure}[!h]
 	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_wbs.png}
+		\includegraphics[scale=0.65]{images/wbs.png}
 		\caption{exemple WBS}
 		\label{fig:exemple_wbs}
 	\end{center}
-\end{figure}
+\end{sidewaysfigure}
+\begin{enumerate}
+    \item Algorithme de collecte de données
+\begin{enumerate}
+    \item Détection 
+    \begin{itemize}
+    \item Consittution d'une base de données en utilisant un modèle de fondation 
+    \item fine tuner un modèle existant (RT-DETR) en utilisant des outils à l'état de l'art tel que Hugging Face 
+    \end{itemize}
+    \item Tracking des joueurs et attribution à une équipe 
+    \begin{itemize}
+        \item Extraction de features (vecteur pour caractériser chaque joueur)
+        \item Réduction de dimension (UMAP) 
+        \item Algorithme de classification(k plus proches voisins)
+    \end{itemize}
+    \item Localisation des joueurs sur le terrain 
+    \begin{itemize}
+        \item Localisation de point clé sur le terrain soit par réseau de neuronne soit par analyse d'image 
+        \item Transformation géométrique de la position des joueurs trouvées aux étapes précédentes
+    \end{itemize}
+\end{enumerate}
+\item Algorithme de traitement de données
+\begin{itemize}
+    \item identification des joueurs pivots 
+    \item prédiction d'un situation de jeu (tir, interception,\dots)
+\end{itemize}
+\end{enumerate}
+\clearpage
 \section{Répartition des responsabilités}
 
 \subsection{La matrice RACI}
@@ -158,12 +214,48 @@ Les 4 types de responsabilités :
 	\item Les C sont généralement ceux qui sont consultés avant la réalisation de certaines taches : ce sont des experts qui apportent les conseils pour préaprer et réussir ce lot de travail.
 	\item I, ce sont ceux qui doivent etre tenus informés parcequ'ils sont concernées. Mais ils n'exercent pas un role direct : on avance sans attendre de retour de leur part.
 \end{itemize}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_matrice_raci.png}
-		\caption{exemple d'une matrice RACI}
-	\end{center}
-\end{figure}
+\begin{sidewaystable}[ht]
+\begin{tabular}{|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|}
+    \hline
+    & & Gabriel L.
+    &Gabriel B.
+    &Rodrigo B.
+    &Hana Feki
+    &Ewerthon M.
+    &Rian S.
+    &Davy Araujo
+    &Yassine B.
+    &Nicolas R.
+    &Eduardo P.
+    &Guilherme G.
+    &Cedric D.
+    &Gabriel Ba.\\
+    \hline
+    \multirow{7}{*}{Lot 1} 
+          & Lot 1.1 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.2 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.3 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.4 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.5 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.6 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 1.7 & R & & A & & & & & & & & & &\\
+    \hline
+    \multirow{2}{*}{Lot 2}
+          & Lot 2.1 & R & & A & & & & & & & & & &\\
+          \cline{2-15}
+          & Lot 2.2 & R & & A & & & & & & & & & &\\
+    \hline
+\end{tabular}
+\caption{Répartition des tâches}
+\label{table:repartition}
+\end{sidewaystable}
+\clearpage
 \section{Plannification}
 \paragraph*{Séquencement des work packages : diagramme de PERT}
 C'est donner pour chaque lot de travail, son ordre de succession.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.18)  16 DEC 2024 03:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.18)  16 DEC 2024 09:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2523,6 +2523,34 @@ Overfull \hbox (4.44444pt too wide) in paragraph at lines 13--55
 \/cmr/m/n/10 ^^Se
  []
 
+
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:55: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:55: Undefined control sequence.
+<write> \newlabel{tab:swot}{{}{\thepage 
+                                        }}
+l.55 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{tab:swot}{{}{}}
+]
 /media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:56: Undefined control sequence.
 l.56 \subsection
                 {Contexte/Hypothèses de départ}
@@ -2570,8 +2598,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 /media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:57: Undefined control sequence.
-l.57 \subsubsection
-                   {Clients}
+l.57 \subsection
+                {Clients}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2706,66 +2734,49 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (24.44444pt too wide) in paragraph at lines 56--61
-[]\/cmr/m/n/10 ^^Re
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--61
-\/cmr/m/n/10 ^^Se
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--61
-\/cmr/m/n/10 ^^Se
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--61
-\/cmr/m/n/10 ^^Se
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--61
-\/cmr/m/n/10 ^^Se 
- []
-
-
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:62: LaTeX Error: Environment figure undefined.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:61: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62 \begin{figure}
+l.61 \begin{figure}
                    [!h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:62: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \begin{figure}[
-                    !h]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
-[] 
+Overfull \hbox (24.44444pt too wide) in paragraph at lines 56--62
+[]\/cmr/m/n/10 ^^Re
  []
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: Undefined control sequence.
-l.64 		\includegraphics
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--62
+\/cmr/m/n/10 ^^Se
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--62
+\/cmr/m/n/10 ^^Se
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--62
+\/cmr/m/n/10 ^^Se
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 56--62
+\/cmr/m/n/10 ^^Se 
+ []
+
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:63: Undefined control sequence.
+l.63 		\includegraphics
                        [scale=0.4]{images/modele_plus_exhaustif_matrice_obje...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2797,16 +2808,16 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: Missing $ inserted.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:63: Missing $ inserted.
 <inserted text> 
                 $
-l.64 		\includegraphics[scale=0.4]{images/modele_
+l.63 		\includegraphics[scale=0.4]{images/modele_
                                                  plus_exhaustif_matrice_obje...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: Extra }, or forgotten $.
-l.64 ...dele_plus_exhaustif_matrice_objectifs.png}
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:63: Extra }, or forgotten $.
+l.63 ...dele_plus_exhaustif_matrice_objectifs.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2815,35 +2826,35 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: LaTeX Error: \caption outside float.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 		\caption
+l.64 		\caption
                {modèle exhaustif de la matrice des objectifs : https://bit....
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 65.
+LaTeX Warning: Command \` invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 65.
+LaTeX Warning: Command \` invalid in math mode on input line 64.
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: Please use \mathaccent for accents in math mode.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.65 		\caption{modè
+l.64 		\caption{modè
                      le exhaustif de la matrice des objectifs : https://bit....
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: Missing { inserted.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:64: Missing { inserted.
 <to be read again> 
                    \edef 
-l.65 		\caption{modè
+l.64 		\caption{modè
                      le exhaustif de la matrice des objectifs : https://bit....
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2851,45 +2862,45 @@ so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: LaTeX Error: Command \end{center} invalid in math mode.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: LaTeX Error: Command \end{center} invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 	\end{center}
+l.65 	\end{center}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: LaTeX Error: Something's wrong--perhaps a missing \item.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 	\end{center}
+l.65 	\end{center}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: LaTeX Error: Something's wrong--perhaps a missing \item.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 	\end{center}
+l.65 	\end{center}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: Missing } inserted.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: Missing } inserted.
 <inserted text> 
                 }
-l.66 	\end{center}
+l.65 	\end{center}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2897,10 +2908,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: Missing $ inserted.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: Missing $ inserted.
 <inserted text> 
                 $
-l.66 	\end{center}
+l.65 	\end{center}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2908,10 +2919,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: Missing } inserted.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:65: Missing } inserted.
 <inserted text> 
                 }
-l.66 	\end{center}
+l.65 	\end{center}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2920,18 +2931,40 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:67: LaTeX Error: \begin{document} ended by \end{figure}.
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:66: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \end{figure}
+l.66 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+Overfull \hbox (461.5119pt too wide) in paragraph at lines 63--67
+[]\OML/cmm/m/it/10 lus[]xhaustif[]atrice[]bjectifs:png[]$
+ []
+
+
+/media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:67: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3
+
+]
 /media/cedric/DSCD/Projets/ENSTA/PIE/pie_rapport.tex:68: Undefined control sequence.
 l.68 \subsubsection
                    {Liste des livrables}
@@ -3051,17 +3084,17 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (461.5119pt too wide) in paragraph at lines 64--73
-[]\OML/cmm/m/it/10 lus[]xhaustif[]atrice[]bjectifs:png[]$
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--73
+[]
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 64--73
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 68--73
 \/cmr/m/n/10 ^^Re
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 64--73
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 68--73
 \/cmr/m/n/10 ^^Re 
  []
 
@@ -7897,11 +7930,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 52 strings out of 479551
- 884 string characters out of 5876172
- 300836 words of memory out of 5000000
+ 53 strings out of 479551
+ 894 string characters out of 5876172
+ 295758 words of memory out of 5000000
  18143 multiletter control sequences out of 15000+600000
  469913 words of font info for 30 fonts, out of 8000000 for 9000
  395 hyphenation exceptions out of 8191
- 23i,9n,32p,582b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,9n,32p,582b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

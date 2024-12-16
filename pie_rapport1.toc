@@ -11,14 +11,16 @@
 \contentsline {subparagraph}{Analyse SWOT}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {2.2}Contexte/Hypothèses de départ}{7}{subsection.1.2.2}%
 \contentsline {subsubsection}{Clients}{7}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {2.3}Partenaires}{7}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {2.4}Principales fonctions identifiées par le cahier des charges}{7}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {2.5}Objectifs et résultats opérationnels}{7}{subsection.1.2.5}%
+\contentsline {subsubsection}{Partenaires}{7}{subsection.1.2.2}%
+\contentsline {subsubsection}{Principales fonctions identifiées par le cahier des charges}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {2.3}Objectifs et résultats opérationnels}{7}{subsection.1.2.3}%
 \contentsline {subsubsection}{Liste des livrables}{8}{figure.caption.5}%
 \contentsline {paragraph}{Produits}{8}{figure.caption.5}%
 \contentsline {paragraph}{Services}{8}{figure.caption.5}%
 \contentsline {paragraph}{Documentation}{8}{figure.caption.5}%
 \contentsline {subsubsection}{Critères et indicateurs de succès}{8}{figure.caption.5}%
+\contentsline {paragraph}{Précision de la détection des joueurs}{8}{figure.caption.5}%
+\contentsline {paragraph}{}{8}{figure.caption.5}%
 \contentsline {section}{\numberline {3}Déroulement du projet}{8}{section.1.3}%
 \contentsline {subsection}{\numberline {3.1}Organisation/ ressources, budget}{8}{subsection.1.3.1}%
 \contentsline {subsubsection}{Lettre de mission}{8}{subsection.1.3.1}%
@@ -33,10 +35,14 @@
 \contentsline {paragraph}{Résumé du budget global}{8}{subsection.1.3.1}%
 \contentsline {paragraph}{Répartition temporelle (échéancier budgétaire)}{8}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {3.2}Jalons : Echéanciers/événements importants}{8}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {3.3}Risques et opportunités}{9}{subsection.1.3.3}%
-\contentsline {section}{\numberline {4}Cahier des charges techniques : exigences opérationnelles}{9}{section.1.4}%
-\contentsline {subsection}{\numberline {4.1}Exigences}{9}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lots et responsabilités}{9}{subsection.1.4.2}%
-\contentsline {section}{\numberline {5}Répartition des responsabilités}{9}{section.1.5}%
-\contentsline {subsection}{\numberline {5.1}La matrice RACI}{9}{subsection.1.5.1}%
-\contentsline {section}{\numberline {6}Plannification}{11}{section.1.6}%
+\contentsline {subsection}{\numberline {3.3}Risques et opportunités}{8}{subsection.1.3.3}%
+\contentsline {paragraph}{Identification des risques}{8}{subsection.1.3.3}%
+\contentsline {paragraph}{Un plan de prévention efficace}{9}{figure.caption.7}%
+\contentsline {section}{\numberline {4}Cahier des charges techniques : exigences opérationnelles}{10}{section.1.4}%
+\contentsline {subsection}{\numberline {4.1}Exigences}{10}{subsection.1.4.1}%
+\contentsline {paragraph}{Exigences fonctionnelles}{10}{subsection.1.4.1}%
+\contentsline {paragraph}{Exigences non fonctionnelles}{10}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lots et responsabilités}{10}{subsection.1.4.2}%
+\contentsline {section}{\numberline {5}Répartition des responsabilités}{13}{section.1.5}%
+\contentsline {subsection}{\numberline {5.1}La matrice RACI}{13}{subsection.1.5.1}%
+\contentsline {section}{\numberline {6}Plannification}{15}{section.1.6}%
