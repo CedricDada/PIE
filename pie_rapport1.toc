@@ -37,6 +37,6 @@
 \contentsline {section}{\numberline {4}Cahier des charges techniques : exigences opérationnelles}{7}{section.1.4}%
 \contentsline {subsection}{\numberline {4.1}Exigences}{7}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {4.2}Lots et responsabilités}{7}{subsection.1.4.2}%
-\contentsline {section}{\numberline {5}Répartition des responsabilités}{9}{section.1.5}%
-\contentsline {subsection}{\numberline {5.1}La matrice RACI}{9}{subsection.1.5.1}%
-\contentsline {section}{\numberline {6}Plannification}{11}{section.1.6}%
+\contentsline {section}{\numberline {5}Répartition des responsabilités}{8}{section.1.5}%
+\contentsline {subsection}{\numberline {5.1}La matrice RACI}{8}{subsection.1.5.1}%
+\contentsline {section}{\numberline {6}Plannification}{9}{section.1.6}%
