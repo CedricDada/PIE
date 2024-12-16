@@ -130,6 +130,12 @@ Nous avons un exemple de plan de prévention à la figure \ref{fig:plan_preventi
 \end{figure}
 \clearpage
 \section{Cahier des charges techniques : exigences opérationnelles}
+\subsection{Parties prenantes}
+\begin{itemize}
+    \item ENSTA (MOA)
+    \item Groupe projet élèves (en tant que MOE)
+    \item 
+\end{itemize}
 \subsection{Exigences}
 \paragraph{Exigences fonctionnelles}
 \begin{itemize}
@@ -144,6 +150,41 @@ Nous avons un exemple de plan de prévention à la figure \ref{fig:plan_preventi
 \begin{itemize}
     \item 
 \end{itemize}
+\paragraph{Vision boite noire du système}
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[scale=0.5]{images/boite_noire.png}
+        \caption{Vision boite noire du système}
+    \end{center}
+\end{figure}
+\paragraph{Diagramme FAST}
+Description du système en modules fonctionnels (regroupement de fonctions élémentaires) avec leur séquencement (temporel, logique ou conditionnel) et leurs échanges de flux.
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[scale=0.5]{images/fast.png}
+        \caption{Diagramme FAST}
+    \end{center}
+\end{figure}
+\paragraph{Logigramme / chaine fonctionnelle}
+A partir des modules fonctionnels et des fonctions élémentaires identifiées dans le diagramme FAST, le logigramme nous permet : 
+\begin{itemize}
+    \item D'ordonnancer les fonctions entre elles 
+    \item D'identifier les interfaces entre les fonctions 
+    \item D'identifier (pour les fonctions élémentaires) quel équipement du système supporte la fonction
+\end{itemize}
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[scale=0.5]{images/logigramme.png}
+        \caption{Logigramme}
+    \end{center}
+    \end{figure}
+\paragraph{Matrice des exigences}
+\begin{figure}[!h]
+\begin{center}
+    \includegraphics[scale=0.5]{images/matrice_exigences.png}
+    \caption{Matrice des exigences}
+\end{center}
+\end{figure}
 \subsection{Lots et responsabilités}
 Le \textbf{WBS} est une opération très délicate de séquençage du projet, qui permet de :
 \begin{itemize}
