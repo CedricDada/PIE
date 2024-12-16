@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.18)  16 DEC 2024 03:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.18)  16 DEC 2024 03:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1025,89 +1025,97 @@ Underfull \hbox (badness 4621) in paragraph at lines 27--28
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5] [6]
-<images/lots.png, id=189, 1054.94125pt x 796.9775pt>
+<images/modele_plus_exhaustif_matrice_objectifs.png, id=189, 1212.53pt x 656.4525pt>
+File: images/modele_plus_exhaustif_matrice_objectifs.png Graphic file (type png)
+<use images/modele_plus_exhaustif_matrice_objectifs.png>
+Package pdftex.def Info: images/modele_plus_exhaustif_matrice_objectifs.png  used on input line 63.
+(pdftex.def)             Requested size: 485.00342pt x 262.57634pt.
+
+Overfull \hbox (29.75931pt too wide) in paragraph at lines 63--64
+ [] 
+ []
+
+[7
+
+ <./images/modele_plus_exhaustif_matrice_objectifs.png>] [8
+
+]
+<images/lots.png, id=203, 1054.94125pt x 796.9775pt>
 File: images/lots.png Graphic file (type png)
 <use images/lots.png>
-Package pdftex.def Info: images/lots.png  used on input line 119.
+Package pdftex.def Info: images/lots.png  used on input line 126.
 (pdftex.def)             Requested size: 210.98451pt x 159.39267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--130
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/exemple_wbs.png, id=192, 960.58875pt x 675.52374pt>
+<images/exemple_wbs.png, id=205, 960.58875pt x 675.52374pt>
 File: images/exemple_wbs.png Graphic file (type png)
 <use images/exemple_wbs.png>
-Package pdftex.def Info: images/exemple_wbs.png  used on input line 129.
+Package pdftex.def Info: images/exemple_wbs.png  used on input line 136.
 (pdftex.def)             Requested size: 192.11433pt x 135.10236pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7]
-<images/exemple_matrice_raci.png, id=200, 1430.34375pt x 975.645pt>
+[9 <./images/lots.png>]
+<images/exemple_matrice_raci.png, id=213, 1430.34375pt x 975.645pt>
 File: images/exemple_matrice_raci.png Graphic file (type png)
 <use images/exemple_matrice_raci.png>
-Package pdftex.def Info: images/exemple_matrice_raci.png  used on input line 156.
+Package pdftex.def Info: images/exemple_matrice_raci.png  used on input line 163.
 (pdftex.def)             Requested size: 286.06367pt x 195.12553pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/exemple_sequencement_lots.png, id=201, 1903.11pt x 690.58pt>
+<images/exemple_sequencement_lots.png, id=214, 1903.11pt x 690.58pt>
 File: images/exemple_sequencement_lots.png Graphic file (type png)
 <use images/exemple_sequencement_lots.png>
-Package pdftex.def Info: images/exemple_sequencement_lots.png  used on input line 165.
+Package pdftex.def Info: images/exemple_sequencement_lots.png  used on input line 172.
 (pdftex.def)             Requested size: 380.61526pt x 138.11354pt.
-[8 <./images/lots.png> <./images/exemple_wbs.png>]
-<images/exemple_diagramme_gantt.png, id=209, 1895.08pt x 963.6pt>
+ [10 <./images/exemple_wbs.png> <./images/exemple_matrice_raci.png>]
+<images/exemple_diagramme_gantt.png, id=222, 1895.08pt x 963.6pt>
 File: images/exemple_diagramme_gantt.png Graphic file (type png)
 <use images/exemple_diagramme_gantt.png>
-Package pdftex.def Info: images/exemple_diagramme_gantt.png  used on input line 178.
+Package pdftex.def Info: images/exemple_diagramme_gantt.png  used on input line 185.
 (pdftex.def)             Requested size: 379.0093pt x 192.71658pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/exemple_diagramme_gantt1.png, id=210, 1884.03876pt x 917.4275pt>
+<images/exemple_diagramme_gantt1.png, id=223, 1884.03876pt x 917.4275pt>
 File: images/exemple_diagramme_gantt1.png Graphic file (type png)
 <use images/exemple_diagramme_gantt1.png>
-Package pdftex.def Info: images/exemple_diagramme_gantt1.png  used on input line 184.
+Package pdftex.def Info: images/exemple_diagramme_gantt1.png  used on input line 191.
 (pdftex.def)             Requested size: 376.80107pt x 183.48225pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/exemple_diagramme_gantt2.png, id=211, 1859.94875pt x 863.225pt>
+<images/exemple_diagramme_gantt2.png, id=224, 1859.94875pt x 863.225pt>
 File: images/exemple_diagramme_gantt2.png Graphic file (type png)
 <use images/exemple_diagramme_gantt2.png>
-Package pdftex.def Info: images/exemple_diagramme_gantt2.png  used on input line 190.
+Package pdftex.def Info: images/exemple_diagramme_gantt2.png  used on input line 197.
 (pdftex.def)             Requested size: 371.98317pt x 172.64194pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/diagramme_gantt_pilotage1.png, id=212, 1859.94875pt x 863.225pt>
+<images/diagramme_gantt_pilotage1.png, id=225, 1859.94875pt x 863.225pt>
 File: images/diagramme_gantt_pilotage1.png Graphic file (type png)
 <use images/diagramme_gantt_pilotage1.png>
-Package pdftex.def Info: images/diagramme_gantt_pilotage1.png  used on input line 197.
+Package pdftex.def Info: images/diagramme_gantt_pilotage1.png  used on input line 204.
 (pdftex.def)             Requested size: 371.98317pt x 172.64194pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/diagramme_gantt_pilotage.png, id=213, 1859.94875pt x 863.225pt>
+<images/diagramme_gantt_pilotage.png, id=226, 1859.94875pt x 863.225pt>
 File: images/diagramme_gantt_pilotage.png Graphic file (type png)
 <use images/diagramme_gantt_pilotage.png>
-Package pdftex.def Info: images/diagramme_gantt_pilotage.png  used on input line 203.
+Package pdftex.def Info: images/diagramme_gantt_pilotage.png  used on input line 210.
 (pdftex.def)             Requested size: 371.98317pt x 172.64194pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [9 <./images/exemple_matrice_raci.png> <./images/exemple_sequencement_lots.png>]
+) [11 <./images/exemple_sequencement_lots.png> <./images/exemple_diagramme_gantt.png>]
 
-LaTeX Warning: Text page 10 contains only floats.
+LaTeX Warning: Text page 12 contains only floats.
 
-[10 <./images/exemple_diagramme_gantt.png> <./images/exemple_diagramme_gantt1.png> <./images/exemple_diagramme_gantt2.png>] [11 <./images/diagramme_gantt_pilotage1.png> <./images/diagramme_gantt_pilotage.png>]
+
+Underfull \vbox (badness 1067) has occurred while \output is active []
+
+ [12 <./images/exemple_diagramme_gantt1.png> <./images/exemple_diagramme_gantt2.png> <./images/diagramme_gantt_pilotage1.png>] [13 <./images/diagramme_gantt_pilotage.png>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pie_rapport1.maf file.
@@ -1129,18 +1137,18 @@ Package rerunfilecheck Info: File `pie_rapport1.out' has not changed.
 (rerunfilecheck)             Checksum: F97EF64E999D1EF5CDF0A6D3316B9F32;3659.
  ) 
 Here is how much of TeX's memory you used:
- 34571 strings out of 479551
- 667740 string characters out of 5876172
- 1170872 words of memory out of 5000000
- 51746 multiletter control sequences out of 15000+600000
+ 34581 strings out of 479551
+ 668145 string characters out of 5876172
+ 1169872 words of memory out of 5000000
+ 51752 multiletter control sequences out of 15000+600000
  526427 words of font info for 106 fonts, out of 8000000 for 9000
  395 hyphenation exceptions out of 8191
  100i,12n,104p,598b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pie_rapport1.pdf (11 pages, 6513122 bytes).
+Output written on pie_rapport1.pdf (13 pages, 6826636 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

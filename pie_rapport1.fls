@@ -1778,6 +1778,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT ./images/modele_plus_exhaustif_matrice_objectifs.png
+INPUT ./images/modele_plus_exhaustif_matrice_objectifs.png
+INPUT images/modele_plus_exhaustif_matrice_objectifs.png
+INPUT ./images/modele_plus_exhaustif_matrice_objectifs.png
+INPUT ./images/modele_plus_exhaustif_matrice_objectifs.png
 INPUT ./images/lots.png
 INPUT ./images/lots.png
 INPUT images/lots.png
