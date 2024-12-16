@@ -11,11 +11,11 @@ L’analyse tactique dans les sports collectifs connaît une croissance exponent
 Le projet \textbf{TactIAque} s’inspire des récents travaux de \textbf{RoboFlow}, une initiative pionnière visant à améliorer les algorithmes d’analyse tactique pour le football. Toutefois, le basketball reste un domaine encore sous-exploré dans ce contexte, offrant une opportunité unique de développement et d’innovation. Ce projet se concentre donc sur le basketball, avec pour objectif de fournir des outils robustes pour l’analyse des tactiques dans ce sport collectif.
 
 En combinant des méthodologies existantes et des innovations spécifiques au basketball, \textbf{TactIAque} vise à combler cette lacune en proposant des solutions adaptées aux exigences de ce sport.
-\paragraph{Hypothèses de lancement}
-    \subparagraph{Compétences des membres de l'équipe}
-    \subparagraph{Moyens techniques à disposition}
-    \subparagraph{Obstacles à lever}
-    \subparagraph{Analyse SWOT}
+\subsubsection{Hypothèses de lancement}
+    \paragraph{Compétences des membres de l'équipe}
+    \paragraph{Moyens techniques à disposition}
+    \paragraph{Obstacles à lever}
+    \paragraph{Analyse SWOT}
     L’analyse SWOT met en évidence les éléments clés influençant la réussite du projet. Voir la figure \ref{tab:swot}
     \begin{table} [!h]
         \centering  
@@ -57,25 +57,31 @@ En combinant des méthodologies existantes et des innovations spécifiques au ba
 \subsubsection{Clients}
 \subsubsection{Partenaires}
 \subsubsection{Principales fonctions identifiées par le cahier des charges}
-\subsection{Objectifs et résultats opérationnels}
+
+\clearpage
+\subsection{Objectifs et résultats opérationnels : liste des livrables}
+produits, services, documentation
 \begin{figure}[!h]
-	\begin{center}
+	\begin{center} 
 		\includegraphics[scale=0.4]{images/modele_plus_exhaustif_matrice_objectifs.png}
 		\caption{modèle exhaustif de la matrice des objectifs : https://bit.ly/2IgKrPD}
 	\end{center}
 \end{figure}
-\clearpage
-\subsubsection{Liste des livrables}
-\paragraph{Produits}
-\paragraph{Services}
-\paragraph{Documentation}
 \subsubsection{Critères et indicateurs de succès}
-\paragraph{Précision de la détection des joueurs}
-\paragraph{}
+\subsubsection*{Détection et suivi}
+\begin{itemize}
+    \item \textbf{Précision de détection des joueurs :} Pourcentage de joueurs correctement détectés (objectif : $>$95\%).
+    \item \textbf{Précision de l’attribution des équipes :} Exactitude des associations joueur-équipe (objectif : $>$90\%).
+    \item \textbf{Fréquence d’actualisation :} Images par seconde (objectif : $\geq$25 FPS).
+\end{itemize}
+
+\subsubsection*{Localisation et analyse}
+\begin{itemize}
+    \item \textbf{Erreur de positionnement :} Distance moyenne entre les positions calculées et les positions réelles des joueurs (objectif : $<$10 cm).
+\end{itemize}
 
 \section{Déroulement du projet}
 \subsection{Organisation/ ressources, budget}
-\subsubsection{Lettre de mission}
 \subsubsection{Roles et responsabilités, comité de pilotage du projet et budget}
 \paragraph{Roles et responsabilités des membres de l'équipe}
 \paragraph{Roles et responsabilités des autres parties prenantes}
@@ -93,7 +99,7 @@ En combinant des méthodologies existantes et des innovations spécifiques au ba
 \end{itemize}
 \paragraph{Répartition temporelle (échéancier budgétaire)}
 Comment les dépenses seront réparties sur la durée du projet
-
+\clearpage
 \subsection{Jalons : Echéanciers/événements importants}
 \begin{table}[!h]
     \centering  
@@ -108,7 +114,7 @@ Comment les dépenses seront réparties sur la durée du projet
     \end{tabular}
 \end{table}
 \subsection{Risques et opportunités}
-\paragraph{Identification des risques}
+\subsubsection{Identification des risques}
 \begin{figure}[!h]
 	\begin{center}
 		\includegraphics[scale=0.25]{images/arbre_causes.png}
@@ -116,7 +122,7 @@ Comment les dépenses seront réparties sur la durée du projet
 		\label{fig:arbre_causes}
 	\end{center}
 \end{figure}
-\paragraph{Un plan de prévention efficace}
+\subsubsection{Un plan de prévention efficace}
 Nous avons un exemple de plan de prévention à la figure \ref{fig:plan_prevention}.
 \begin{danger}
 	Il ne faut pas oublier de tier le tableau pour mettre en haut les risques prioritaires
@@ -137,35 +143,82 @@ Nous avons un exemple de plan de prévention à la figure \ref{fig:plan_preventi
     \item 
 \end{itemize}
 \subsection{Exigences}
-\paragraph{Exigences fonctionnelles}
-\begin{itemize}
-    \item Identifier les joueurs 
-    \item Associer les joueurs à leurs équipes 
-    \item Identifier le joueur en possession de la balle 
-    \item Identifier le ou les arbitres 
-    \item Identification des joueurs pivots 
-    \item Prédire une situation de jeu (tir, interception, \dots)
-\end{itemize}
-\paragraph{Exigences non fonctionnelles}
-\begin{itemize}
-    \item 
-\end{itemize}
-\paragraph{Vision boite noire du système}
+\subsubsection{Exigences fonctionnelles}
+\section*{Exigences Fonctionnelles}
+\begin{enumerate}
+    \item \textbf{Détection des joueurs et des équipes :}
+    \begin{itemize}
+        \item Le système doit identifier tous les joueurs visibles dans une vidéo et leur associer une équipe.
+        \item Il doit identifier le joueur en possession de la balle avec une précision supérieure à 90\%.
+        \item Il doit identifier le ou les arbitres avec une précision supérieure à 90\%.
+    \end{itemize}
+    
+    \item \textbf{Suivi des joueurs :}
+    \begin{itemize}
+        \item Le système doit suivre les mouvements de chaque joueur sur le terrain en temps réel et enregistrer leurs trajectoires.
+        \item La position des joueurs doit être mise à jour à une fréquence d’au moins 25 FPS (images par seconde).
+    \end{itemize}
+    
+    \item \textbf{Localisation des joueurs sur le terrain :}
+    \begin{itemize}
+        \item Le système doit convertir les positions des joueurs depuis l’espace de la vidéo en coordonnées sur le terrain réel.
+        \item Il doit pouvoir gérer des perspectives différentes des caméras et aligner les positions avec un plan du terrain.
+    \end{itemize}
+    
+    \item \textbf{Visualisation des trajectoires :}
+    \begin{itemize}
+        \item Une interface graphique doit afficher les trajectoires des joueurs sur une représentation schématique du terrain.
+        \item La visualisation doit inclure des options de filtrage (par joueur, par équipe, par période de temps).
+    \end{itemize}
+    
+    \item \textbf{Analyse tactique :}
+    \begin{itemize}
+        \item Le système doit identifier le ou les joueurs pivots avec une précision supérieure à 90\%.
+        \item Identifier des patterns tactiques globaux (exemple : formation, stratégies défensives/offensives).
+        \item Analyser des situations spécifiques pour prédire des événements comme un tir ou une interception.
+    \end{itemize}
+\end{enumerate}
+
+\section*{Exigences Non Fonctionnelles}
+\begin{enumerate}
+    \item \textbf{Performance :}
+    \begin{itemize}
+        \item Le système doit traiter une vidéo de 10 minutes en moins de 5 minutes.
+        \item Pour l’analyse en temps réel, la latence de détection ne doit pas dépasser 100 ms.
+    \end{itemize}
+    
+    \item \textbf{Fiabilité :}
+    \begin{itemize}
+        \item Le système doit fonctionner avec un taux d’erreur inférieur à 5\% pour la détection des joueurs et des équipes.
+    \end{itemize}
+    
+    \item \textbf{Interopérabilité :}
+    \begin{itemize}
+        \item Le produit doit être compatible avec plusieurs formats vidéo (MP4, AVI, etc.).
+    \end{itemize}
+\end{enumerate}
+\subsubsection{Vision boite noire du système}
 \begin{figure}[!h]
     \begin{center}
         \includegraphics[scale=0.5]{images/boite_noire.png}
         \caption{Vision boite noire du système}
     \end{center}
 \end{figure}
-\paragraph{Diagramme FAST}
+\subsubsection{Diagramme FAST}
 Description du système en modules fonctionnels (regroupement de fonctions élémentaires) avec leur séquencement (temporel, logique ou conditionnel) et leurs échanges de flux.
 \begin{figure}[!h]
     \begin{center}
-        \includegraphics[scale=0.5]{images/fast.png}
+        \includegraphics[scale=0.7]{images/fast.png}
         \caption{Diagramme FAST}
     \end{center}
 \end{figure}
-\paragraph{Logigramme / chaine fonctionnelle}
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[scale=0.5]{images/tactIAque_fast.png}
+        \caption{Diagramme FAST}
+    \end{center}
+\end{figure}
+\subsubsection{Logigramme / chaine fonctionnelle}
 A partir des modules fonctionnels et des fonctions élémentaires identifiées dans le diagramme FAST, le logigramme nous permet : 
 \begin{itemize}
     \item D'ordonnancer les fonctions entre elles 
@@ -178,13 +231,16 @@ A partir des modules fonctionnels et des fonctions élémentaires identifiées d
         \caption{Logigramme}
     \end{center}
     \end{figure}
-\paragraph{Matrice des exigences}
+\subsubsection{Matrice des exigences}
 \begin{figure}[!h]
 \begin{center}
     \includegraphics[scale=0.5]{images/matrice_exigences.png}
     \caption{Matrice des exigences}
 \end{center}
 \end{figure}
+\clearpage
+\section{Répartition des responsabilités}
+
 \subsection{Lots et responsabilités}
 Le \textbf{WBS} est une opération très délicate de séquençage du projet, qui permet de :
 \begin{itemize}
@@ -203,7 +259,7 @@ Pour chaque tache de travail, on décompose selon un critère donné. Par exempl
 Un exemple de WBS à la figure \ref{fig:exemple_wbs}
 \begin{sidewaysfigure}[!h]
 	\begin{center}
-		\includegraphics[scale=0.65]{images/wbs.png}
+		\includegraphics[scale=0.6]{images/tactIAque_wbs.png}
 		\caption{exemple WBS}
 		\label{fig:exemple_wbs}
 	\end{center}
@@ -234,9 +290,6 @@ Un exemple de WBS à la figure \ref{fig:exemple_wbs}
     \item prédiction d'un situation de jeu (tir, interception,\dots)
 \end{itemize}
 \end{enumerate}
-\clearpage
-\section{Répartition des responsabilités}
-
 \subsection{La matrice RACI}
 La \textbf{matrice RACI} est la matrice des responsabilités, elle précise et réparti les roles pour chaque lot de travail, ce qui a pour effet d'éviter les erreurs de communication.
 
@@ -300,12 +353,12 @@ Les 4 types de responsabilités :
 \section{Plannification}
 \paragraph*{Séquencement des work packages : diagramme de PERT}
 C'est donner pour chaque lot de travail, son ordre de succession.
-\begin{figure}[!h]
+\begin{sidewaysfigure}[!h]
 	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_sequencement_lots.png}
-		\caption{Exemple de séquencement des lots de travial}
+		\includegraphics[scale=0.55]{images/TactIAque_pert.jpg}
+		\caption{Diagramme de PERT}
 	\end{center}
-\end{figure}
+\end{sidewaysfigure}
 \paragraph*{Diagramme de Gantt prévisionnel}
 \begin{itemize}
 	\item Les lots de travail sont représentées par des barres
@@ -313,34 +366,9 @@ C'est donner pour chaque lot de travail, son ordre de succession.
 	\item Les flêches indiquent les liens entre les tâches
 	\item Le chemin critique qui détermine la date de fin du projet
 \end{itemize}
-\begin{figure}[!h]
+\begin{sidewaysfigure}[!h]
 	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_diagramme_gantt.png}
-		\caption{Exemple de diagramme de Gantt prévisionnel}
-	\end{center}
-\end{figure}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_diagramme_gantt1.png}
-		\caption{Exemple de diagramme de Gantt prévisionnel (illustration période interruption)}
-	\end{center}
-\end{figure}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/exemple_diagramme_gantt2.png}
-		\caption{Exemple de diagramme de Gantt prévisionnel (illustration chemin critique)}
-	\end{center}
-\end{figure}
-\paragraph*{Diagramme de Gantt en mode pilotage}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/diagramme_gantt_pilotage1.png}
-		\caption{Exemple de diagramme de Gantt en mode pilotage (illustration indicateurs d'avancement)}
-	\end{center}
-\end{figure}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[scale=0.2]{images/diagramme_gantt_pilotage.png}
-		\caption{Exemple de diagramme de Gantt en mode pilotage (illustration (se servir de la date actuelle pour voir si on est en retard))}
-	\end{center}
-\end{figure}
+		\includegraphics[scale=0.6]{images/tactIAque_gantt.png}
+		\caption{Diagramme de Gantt}
+    \end{center}
+	\end{sidewaysfigure}
